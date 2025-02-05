@@ -1,4 +1,4 @@
-FROM nginx:1.27
+FROM image-registry.openshift-image-registry.svc:5000/openshift/nginx:1.26-alpine
 
 RUN chmod g+w /var/cache/nginx /var/run
 
