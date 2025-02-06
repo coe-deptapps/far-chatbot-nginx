@@ -3,6 +3,7 @@ FROM image-registry.openshift-image-registry.svc:5000/openshift/nginx:1.26-alpin
 RUN chmod g+w /var/cache/nginx /var/run
 
 COPY default.conf /etc/nginx/conf.d
+RUN ls -l /usr/local/bin/
 
 EXPOSE 8080
 
